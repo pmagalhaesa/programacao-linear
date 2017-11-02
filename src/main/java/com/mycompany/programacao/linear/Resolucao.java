@@ -5,7 +5,6 @@
  */
 package com.mycompany.programacao.linear;
 import org.gnu.glpk.GLPK;
-import org.gnu.glpk.GLPKJNI;
 
 /**
  *
@@ -24,7 +23,7 @@ public class Resolucao {
      */
     
     public static String getVersaoGLPK(){
-     // System.out.println(GLPK.GLP_ASN_MAX);
+      System.out.println(GLPK.GLP_ASN_MAX);
         return GLPK.glp_version();
     }
     

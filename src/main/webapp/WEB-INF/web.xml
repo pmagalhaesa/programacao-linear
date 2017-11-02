@@ -4,9 +4,17 @@
         <servlet-name>ResolucaoServlet</servlet-name>
         <servlet-class>com.mycompany.programacao.linear.servlets.ResolucaoServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GLPKServlet</servlet-name>
+        <servlet-class>GLPKServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ResolucaoServlet</servlet-name>
         <url-pattern>/Resolucao</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GLPKServlet</servlet-name>
+        <url-pattern>/GLPKServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
