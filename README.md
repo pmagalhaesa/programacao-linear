@@ -37,4 +37,4 @@
 	- Depois de obter a variável de **entrada**, determina-se a variável de **saída** pr meio do **menor quociente P0/Pj** dos valores **estritamente negativos**
 - Dica
 	- O problema de **minimizar Z** é equivamente ao problema de **maximizar (-1) Z**. Onde quando tiver a **solução** basta **multiplicar** por **-1** 
->>>>>>> cde8e822eb9eac62fac0053fde9efbac8e7810bd
+
