@@ -12,10 +12,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.mycompany.programacao.linear.Resolucao;
+import java.util.ArrayList;
+import javax.servlet.annotation.WebServlet;
 /**
  *
  * @author paula
  */
+
 public class ResolucaoServlet extends HttpServlet {
 
     /**
@@ -32,21 +35,18 @@ public class ResolucaoServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet ResolucaoServlet</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Versão do GLPK " + Resolucao.getVersaoGLPK()+ "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        } finally {
-            out.close();
+            
+
+            // Pega as variaveis passadas por parametro do formulario, convertando o seu tipo para inteiro
+           int qtdVarDecisoes  = Integer.parseInt(request.getParameter("qtdVarDecisoes"));
+           int qtdRestricoes   = Integer.parseInt(request.getParameter("qtdRestricoes"));
+           
+        } catch(Exception ex) {
+          
         }
     }
 
+    
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.

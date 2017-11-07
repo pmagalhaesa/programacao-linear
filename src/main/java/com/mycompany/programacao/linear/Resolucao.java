@@ -15,7 +15,16 @@ public class Resolucao {
     /**
      * Construtor da classe
      */
-    public Resolucao(){}
+    
+    // Criando propriedades(atributos) para utilizacao da classe
+    private int qtdVarDecisoes;
+    private int qtdRestricoes;
+    
+    // Construtor definindo a quantidade de variaveis de decisoes e quantidade de restrições
+    public Resolucao(int qtdVarDecisoes, int qtdRestricoes){
+        this.qtdVarDecisoes = qtdVarDecisoes;
+        this.qtdRestricoes  = qtdRestricoes;
+    }
     
     /**
      * Retorna versão do GLPK

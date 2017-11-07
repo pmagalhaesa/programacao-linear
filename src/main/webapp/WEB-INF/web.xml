@@ -14,11 +14,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>ResolucaoServlet</servlet-name>
-        <url-pattern>/Resolucao</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>GLPKServlet</servlet-name>
-        <url-pattern>/GLPKServlet</url-pattern>
+        <url-pattern>/resolucao</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ModelagemServlet</servlet-name>
