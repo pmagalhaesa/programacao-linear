@@ -41,6 +41,11 @@ public class ResolucaoServlet extends HttpServlet {
            int qtdVarDecisoes  = Integer.parseInt(request.getParameter("qtdVarDecisoes"));
            int qtdRestricoes   = Integer.parseInt(request.getParameter("qtdRestricoes"));
            
+           String[] funcaoObjetiva  = request.getParameterValues("funcaoObjetiva");
+           String[] restricoes      = request.getParameterValues("restricoes");
+           String sinal             = request.getParameter("sinal");
+           
+           System.out.println(restricoes);
         } catch(Exception ex) {
           
         }
