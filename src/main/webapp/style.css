@@ -14,8 +14,31 @@ and open the template in the editor.
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .row{
     margin-top: 15px;
     margin-bottom: 15px;
+}
+.btn1{
+    margin-top: 40px;
+}
+.title-problema{
+    margin-bottom: 40px;
+}
+.box{
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    padding: 15px;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    margin-top: 13px;
+}
+.btn-primary{
+    background-color: #46ccb9;
+    border: 0;
+}
+.btn:hover, .btn:active, .btn:focus, .btn:visited, .btn-primary:active:focus, .btn-primary:active:hover{
+    background-color: #95f1e4;
+    border: 0;
 }
